@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int m1, m2, m3, m4, m5;
+    int total, percentage;
+
+    printf("Enter 5 subject marks: ");
+    scanf("%d %d %d %d %d", &m1, &m2, &m3, &m4, &m5);
+
+    total = m1 + m2 + m3 + m4 + m5;
+    percentage = total / 5;
+
+    printf("%d %d ", total, percentage);
+
+    if (percentage >= 90)
+        printf("A");
+    else if (percentage >= 75)
+        printf("B");
+    else if (percentage >= 60)
+        printf("C");
+    else
+        printf("Fail");
+
+    return 0;
+}
