@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int balance = 5000;
+    int withdrawAmount = 1200;
+
+    if (withdrawAmount > balance) {
+        printf("Transaction Failed");
+    }
+    else if (withdrawAmount % 100 != 0) {
+        printf("Transaction Failed");
+    }
+    else {
+        printf("Transaction Successful");
+    }
+
+    return 0;
+}
